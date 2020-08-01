@@ -1,4 +1,12 @@
+FIX lỗi: vendor/autoload.php
+
+- Mở Git Bash hoặc CMD > di chuyển đến thư mục chứa project, gõ lệnh:
+composer install
+- copy file .env.example rồi đổi tên thành .evn
+- bấm: Alt + F12 gõ lệnh: php artisan key:generate
+- chạy tiếp lệnh : php artisan migrate --seed
 1.
+
 theo đường dẫn:"C:\Windows\System32\drivers\etc"
 dùng notepat mở bằng admin file host
 copy and paste 2 file này vào cuối file host và save.
