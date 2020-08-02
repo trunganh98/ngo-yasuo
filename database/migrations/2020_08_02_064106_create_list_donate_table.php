@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateListPostTable extends Migration
+class CreateListDonateTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateListPostTable extends Migration
      */
     public function up()
     {
-        Schema::create('list_post', function (Blueprint $table) {
-            $table->increments('post_id');
-            $table->string('post_title');
-            $table->text('post_content');
-            $table->string('post_imageName');
-            $table->integer('post_status');
+        Schema::create('list_donate', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -30,6 +26,6 @@ class CreateListPostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('list_post');
+        Schema::dropIfExists('list_donate');
     }
 }
