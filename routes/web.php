@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 //Frontend
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
+Route::get('/login', 'HomeController@login');
+Route::get('/register', 'HomeController@register');
+
+
 
 
 //Backend
@@ -24,7 +28,7 @@ Route::get('/admin', 'AdminController@showDashboard');
 
 //web đăng nhập admin website
 Route::get('/admin/login', 'AdminController@showLogin');
-
+Route::get('/admin/register', 'AdminController@register');
 //đăng xuất admin web
 Route::get('/logout','AdminController@logOut');
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> Charity | Teamplate</title>
+    <title> Give - AID Home </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -72,7 +72,7 @@
                                     </form>
                                 </div>
                                 <ul class="contact-now">
-                                    <li><a href="#">Subscribe Now</a></li>
+                                    <li><a class="font-weight-bold" href="{{URL::to('login')}}"><u>Login</u></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -94,18 +94,18 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="{{URL::to('home')}}">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="program.html">latest causes</a></li>
-                                            <li><a href="events.html">social events </a></li>
-                                            <li><a href="blog.html">Blog</a>
+                                            <li><a href="{{URL::to('home')}}" class="font-weight-bold"><h2>News</h2></a>
                                                 <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
+                                                    <li><a href="#">Children</a></li>
+                                                    <li><a href="#">Education</a></li>
+                                                    <li><a href="#">Woman</a></li>
+                                                    <li><a href="#">Others</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="program.html">Help Center</a></li>
+                                            <li><a href="events.html">Our partners </a></li>
+
                                         </ul>
                                     </nav>
                                 </div>

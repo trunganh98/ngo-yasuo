@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMembersTblTable extends Migration
+class CreateAdminUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateMembersTblTable extends Migration
      */
     public function up()
     {
-        Schema::create('members_tbl', function (Blueprint $table) {
-            $table->increments('member_id');
-            $table->string('username')->nullable();
+        Schema::create('admin_user', function (Blueprint $table) {
+            $table->increments('admin_id');
+            $table->string('email')->nullable();
             $table->string('password')->nullable();
-            $table->string('fullname')->nullable();
+            $table->string('confirm_password')->nullable();
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
             $table->string('address')->nullable();
             $table->string('phone')->nullable();
             $table->timestamps();
@@ -31,6 +33,6 @@ class CreateMembersTblTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('members_tbl');
+        Schema::dropIfExists('admin_user');
     }
 }

@@ -34,10 +34,10 @@
                         <option value="1">Show</option>
                         <option value="0">Hidden</option>
                     </select>
-{{--                    <div class="form-group" name="imageName">--}}
-{{--                        <label for="exampleInputFile">Image input</label>--}}
-{{--                        <input type="file" id="exampleInputFile">--}}
-{{--                    </div>--}}
+                    <div class="form-group" name="imageName">
+                        <label for="exampleInputFile">Image input</label>
+                        <input type="file" id="exampleInputFile">
+                    </div>
                     <button type="submit" name="add_new_post" class="btn mt-10 btn-info ">Submit</button>
                 </form>
             </div>
