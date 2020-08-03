@@ -37,5 +37,7 @@ Route::post('/admin-dashBoard', 'AdminController@login');
 // Posts
 Route::get('/add_post','PostController@addPost');
 Route::get('/list_post','PostController@listPost');
-
 Route::post('/save_new_post','PostController@saveNewPost');
+
+//help center
+Route::get('/helpcenter','HelpCenterController@showHelpCenter');
